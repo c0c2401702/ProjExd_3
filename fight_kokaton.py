@@ -202,7 +202,7 @@ def main():
                     #ビームと爆弾の衝突判定
                     score.score+=1
                     beams[i], bombs[b] =None,None
-                    beams=[beam for beam in beams if beam is not None]
+                    beams = [beam for beam in beams if beam is not None] #修正
                     bird.change_img(6, screen)
         bombs=[bomb for bomb in bombs if bomb is not None]
         score.update(screen)
